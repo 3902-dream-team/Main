@@ -1,6 +1,6 @@
-using System;
+using Microsoft.Xna.Framework.Input;
+using Project1.Interfaces;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Project1.Classes
 {
@@ -9,7 +9,7 @@ namespace Project1.Classes
         private Dictionary<Keys, ICommand> controllerMappings;
         private Game1 myGame;
 
-        public KeyboardController(Game game)
+        public KeyboardController(Game1 game)
         {
             myGame = game;
             controllerMappings = new Dictionary<Keys, ICommand>();
@@ -19,8 +19,12 @@ namespace Project1.Classes
         {
 
         }
+
         void Update()
         {
 
         }
+
+        
     }
+}

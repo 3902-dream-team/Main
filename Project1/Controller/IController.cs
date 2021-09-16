@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project1.Interfaces
+namespace Project1.Controller
 {
-    interface IController
+    public interface IController
     {
         void RegisterCommand(ICommand command, Keys key = Keys.None);
         void Update();

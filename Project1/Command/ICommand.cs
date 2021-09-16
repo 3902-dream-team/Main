@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Project1.Interfaces
 {
-    interface ICommand
+    public interface ICommand
     {
         Game1 game { get; set; }
 
