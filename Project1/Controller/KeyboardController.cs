@@ -1,28 +1,32 @@
 using Microsoft.Xna.Framework.Input;
-using Project1.Interfaces;
+using Project1.Command;
 using System.Collections.Generic;
 
-namespace Project1.Classes
+namespace Project1.Controller
 {
     class KeyboardController : IController
     {
         private Dictionary<Keys, ICommand> controllerMappings;
-        private Game1 myGame;
 
-        public KeyboardController(Game1 game)
+        public KeyboardController()
         {
-            myGame = game;
             controllerMappings = new Dictionary<Keys, ICommand>();
         }
 
-        void RegisterCommand(ICommand command, Keys key = Keys.None)
+        public void RegisterCommand(ICommand command, Keys key)
         {
-
+            controllerMappings.Add(key, command);
         }
 
-        void Update()
-        {
 
+        public void Update()
+        {
+            Keys[] pressedKeys = Keyboard.GetState().GetPressedKeys();
+
+            foreach (Keys key in pressedKeys)
+            {
+                controllerMappings[key].Execute();
+            }
         }
 
         

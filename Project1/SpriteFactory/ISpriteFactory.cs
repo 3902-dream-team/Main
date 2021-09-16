@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project1.Interfaces
+namespace Project1.SpriteFactory
 {
     interface ISpriteFactory
     {
