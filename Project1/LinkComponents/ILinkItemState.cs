@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Project1.LinkComponents
 {
-    interface ILinkItemState
+    public interface ILinkItemState
     {
     }
 }

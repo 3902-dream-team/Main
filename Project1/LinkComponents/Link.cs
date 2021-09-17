@@ -6,6 +6,9 @@ namespace Project1.LinkComponents
 {
     class Link : ILink
     {
+        public ILinkState LinkState { get; set; }
+        public ILinkItemState LinkItemState { get; set; }
+
         public void MoveDown()
         {
             throw new NotImplementedException();

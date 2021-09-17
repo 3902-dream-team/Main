@@ -6,8 +6,8 @@ namespace Project1.LinkComponents
 {
     public interface ILink
     {
-        private static ILinkState LinkState;
-        private static ILinkItemState LinkItemState;
+        ILinkState LinkState { get; set; }
+        ILinkItemState LinkItemState { get; set; }
         void MoveUp();
         void MoveDown();
         void MoveRight();
