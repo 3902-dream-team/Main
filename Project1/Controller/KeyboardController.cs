@@ -15,7 +15,10 @@ namespace Project1.Controller
 
         public void RegisterCommand(ICommand command, Keys key)
         {
-            controllerMappings.Add(key, command);
+            if (!controllerMappings.TryAdd(key, command))
+            {
+                controllerMappings[key] = command;
+            }
         }
 
 

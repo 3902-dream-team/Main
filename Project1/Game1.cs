@@ -1,6 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Project1.Command;
+using Project1.Controller;
+using Project1.LinkComponents;
 
 namespace Project1
 {
@@ -8,7 +11,8 @@ namespace Project1
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-
+        public ILink Link;
+        private IController keyboard;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -18,8 +22,7 @@ namespace Project1
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
-
+            keyboard = new KeyboardController();
             base.Initialize();
         }
 
@@ -27,7 +30,10 @@ namespace Project1
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            keyboard.RegisterCommand(new MoveUpCmd(this), Keys.W);
+            keyboard.RegisterCommand(new MoveDownCmd(this), Keys.S);
+            keyboard.RegisterCommand(new MoveRightCmd(this), Keys.D);
+            keyboard.RegisterCommand(new MoveLeftCmd(this), Keys.A);
         }
 
         protected override void Update(GameTime gameTime)
