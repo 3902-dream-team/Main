@@ -25,22 +25,21 @@ namespace Project1.LinkComponents
 
         public void MoveDown()
         {
-            throw new NotImplementedException();
+            Link.LinkState = new LinkStateDown(Link); 
         }
 
         public void MoveLeft()
         {
-            throw new NotImplementedException();
+            Link.LinkState = new LinkStateLeft(Link); 
         }
 
         public void MoveRight()
         {
-            throw new NotImplementedException();
         }
 
         public void MoveUp()
         {
-            throw new NotImplementedException();
+            Link.LinkState = new LinkStateUp(Link); 
         }
     }
 }

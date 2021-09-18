@@ -40,7 +40,6 @@ namespace Project1.LinkComponents
 
         public void MoveUp()
         {
-            throw new NotImplementedException();
         }
     }
 }
