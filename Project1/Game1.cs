@@ -29,11 +29,16 @@ namespace Project1
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            // Requirement - Arrow and "wasd" keys should move Link and change his facing direction.
             keyboard.RegisterCommand(new LinkMoveUpCmd(this), Keys.W);
             keyboard.RegisterCommand(new LinkMoveDownCmd(this), Keys.S);
             keyboard.RegisterCommand(new LinkMoveRightCmd(this), Keys.D);
             keyboard.RegisterCommand(new LinkMoveLeftCmd(this), Keys.A);
+
+            keyboard.RegisterCommand(new LinkMoveUpCmd(this), Keys.Up);
+            keyboard.RegisterCommand(new LinkMoveDownCmd(this), Keys.Down);
+            keyboard.RegisterCommand(new LinkMoveRightCmd(this), Keys.Right);
+            keyboard.RegisterCommand(new LinkMoveLeftCmd(this), Keys.Left);
         }
 
         protected override void Update(GameTime gameTime)
