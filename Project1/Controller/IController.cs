@@ -10,7 +10,7 @@ namespace Project1.Controller
 {
     public interface IController
     {
-        void RegisterCommand(ICommand command, Keys key = Keys.None);
+        void RegisterCommand(ICommand command, Keys key);
         void Update();
     }
 }
