@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,23 +9,37 @@ namespace Project1.LinkComponents
     {
         public ILinkState LinkState { get; set; }
         public ILinkItemState LinkItemState { get; set; }
+        public Vector2 Position { get; set; }
 
+        public Link()
+        {
+            LinkState = new LinkStateUp(this);
+        }
         public void MoveDown()
         {
-            throw new NotImplementedException();
+            LinkState.MoveDown();
         }
 
         public void MoveLeft()
         {
-            throw new NotImplementedException();
+            LinkState.MoveLeft();
         }
 
         public void MoveRight()
         {
-            throw new NotImplementedException();
+            LinkState.MoveRight();
         }
 
         public void MoveUp()
+        {
+            LinkState.MoveUp();
+        }
+
+        public void SwordAttack()
+        {
+            throw new NotImplementedException();
+        }
+        public void Draw()
         {
             throw new NotImplementedException();
         }

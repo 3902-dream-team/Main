@@ -40,6 +40,9 @@ namespace Project1
             keyboard.RegisterCommand(new LinkMoveRightCmd(this), Keys.Right);
             keyboard.RegisterCommand(new LinkMoveLeftCmd(this), Keys.Left);
 
+            keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.Z);
+            keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.N);
+
             /* Requirement - The 'z' and 'n' key should cause Link to attack using his sword. 
              * Number keys(1, 2, 3, etc.) should be used to have Link use a different item(later 
              *  this will be replaced with a menu system and 'x' and 'm' for the secondary item. 
