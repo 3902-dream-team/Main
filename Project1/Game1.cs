@@ -30,10 +30,10 @@ namespace Project1
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            keyboard.RegisterCommand(new MoveUpCmd(this), Keys.W);
-            keyboard.RegisterCommand(new MoveDownCmd(this), Keys.S);
-            keyboard.RegisterCommand(new MoveRightCmd(this), Keys.D);
-            keyboard.RegisterCommand(new MoveLeftCmd(this), Keys.A);
+            keyboard.RegisterCommand(new LinkMoveUpCmd(this), Keys.W);
+            keyboard.RegisterCommand(new LinkMoveDownCmd(this), Keys.S);
+            keyboard.RegisterCommand(new LinkMoveRightCmd(this), Keys.D);
+            keyboard.RegisterCommand(new LinkMoveLeftCmd(this), Keys.A);
         }
 
         protected override void Update(GameTime gameTime)

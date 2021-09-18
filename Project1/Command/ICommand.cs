@@ -6,7 +6,7 @@ namespace Project1.Command
 {
     public interface ICommand
     {
-        Game1 game { get; set; }
+        Game1 Game { get; set; }
 
         void Execute();
     }
