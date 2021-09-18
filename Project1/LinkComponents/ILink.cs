@@ -15,5 +15,6 @@ namespace Project1.LinkComponents
         void MoveLeft();
         void SwordAttack();
         void Draw();
+        void Update();
     }
 }

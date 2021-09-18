@@ -23,12 +23,15 @@ namespace Project1
         protected override void Initialize()
         {
             keyboard = new KeyboardController();
+            Link = new Link(this); 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            // Register keyboard commands 
             // Requirement - Arrow and "wasd" keys should move Link and change his facing direction.
             keyboard.RegisterCommand(new LinkMoveUpCmd(this), Keys.W);
             keyboard.RegisterCommand(new LinkMoveDownCmd(this), Keys.S);
@@ -70,6 +73,8 @@ namespace Project1
             /* Requirement - Use 'q' to quit 
              * and 'r' to reset the program back to its initial state.
              */
+
+            // Load sprite images 
         }
 
         protected override void Update(GameTime gameTime)
@@ -78,7 +83,7 @@ namespace Project1
                 Exit();
 
             // TODO: Add your update logic here
-
+            Link.Update(); 
             base.Update(gameTime);
         }
 
@@ -87,7 +92,7 @@ namespace Project1
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-
+            Link.Draw(); 
             base.Draw(gameTime);
         }
     }

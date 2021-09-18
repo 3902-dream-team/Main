@@ -59,7 +59,12 @@ namespace Project1.LinkComponents
         }
         public void Draw()
         {
-            throw new NotImplementedException();
+            LinkState.Draw(); 
+        }
+
+        public void Update()
+        {
+            LinkState.Draw();        
         }
     }
 }
