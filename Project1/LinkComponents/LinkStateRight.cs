@@ -13,6 +13,16 @@ namespace Project1.LinkComponents
             Link = link;
         }
 
+        public void Update()
+        {
+
+        }
+
+        public void Draw()
+        {
+
+        }
+
         public void MoveDown()
         {
             throw new NotImplementedException();

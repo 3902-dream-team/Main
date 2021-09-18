@@ -5,8 +5,10 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Link.png</File>
+    <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/MirrorredLink.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

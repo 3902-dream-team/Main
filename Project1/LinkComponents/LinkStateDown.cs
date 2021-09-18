@@ -9,10 +9,6 @@ namespace Project1.LinkComponents
     {
         public ILink Link { get; set; }
 
-        public LinkStateDown(ILink link)
-        {
-            Link = link;
-        }
         public void MoveDown()
         {
             
