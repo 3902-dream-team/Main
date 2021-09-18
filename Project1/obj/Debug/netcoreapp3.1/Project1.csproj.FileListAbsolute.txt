@@ -149,3 +149,4 @@ C:\Users\Elise\Source\Repos\3902-dream-team\main-project\Project1\obj\Debug\netc
 C:\Users\Elise\Source\Repos\3902-dream-team\main-project\Project1\obj\Debug\netcoreapp3.1\Project1.pdb
 C:\Users\Elise\Source\Repos\3902-dream-team\main-project\Project1\obj\Debug\netcoreapp3.1\Project1.genruntimeconfig.cache
 C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\Link.xnb
+C:\Users\Elise\Source\Repos\3902-dream-team\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\MirrorredLink.xnb
