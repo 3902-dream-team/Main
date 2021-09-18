@@ -8,6 +8,21 @@ namespace Project1.LinkComponents
     {
         public ILink Link { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public LinkStateDown(ILink link)
+        {
+            Link = link;
+        }
+
+        public void Update()
+        {
+
+        }
+
+        public void Draw()
+        {
+
+        }
+
         public void MoveDown()
         {
             throw new NotImplementedException();

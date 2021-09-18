@@ -8,10 +8,21 @@ namespace Project1.LinkComponents
     {
         public ILink Link { get; set; }
 
-        public LinkStateUp (ILink link)
+        public LinkStateUp(ILink link)
         {
             Link = link;
         }
+
+        public void Update()
+        {
+
+        }
+
+        public void Draw()
+        {
+
+        }
+
         public void MoveDown()
         {
             Link.LinkState = new LinkStateDown(Link);
