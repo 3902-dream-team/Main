@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Project1.SpriteFactory
 {
-    interface ISpriteFactory
+    public interface ISpriteFactory
     { 
         public static ISpriteFactory Instance { get; }
         void LoadAllTextures(ContentManager content);

@@ -2,19 +2,22 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Project1.SpriteFactory;
+
 
 namespace Project1.LinkComponents
 {
     class Link : ILink
     {
         public ILinkState LinkState { get; set; }
-        public ILinkItemState LinkItemState { get; set; }
+        // public ILinkItemState LinkItemState { get; set; }
+        public ISpriteFactory LinkSprite { get; set; }
         private Vector2 position;
         private Game1 game;
 
         public Link(Game1 game)
         {
-            LinkState = new LinkStateUp(this);
+            LinkState = new LinkStateUp(this, game);
             this.game = game;
         }
         public void MoveDown()
@@ -53,13 +56,18 @@ namespace Project1.LinkComponents
             LinkState.MoveUp();
         }
 
-        public void SwordAttack()
+        public void Attack()
         {
             throw new NotImplementedException();
         }
+
+        public void TakeDamage()
+        {
+
+        }
         public void Draw()
         {
-            
+            LinkState.Draw();
         }
 
         public void Update()

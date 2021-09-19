@@ -43,17 +43,21 @@ namespace Project1
             keyboard.RegisterCommand(new LinkMoveRightCmd(this), Keys.Right);
             keyboard.RegisterCommand(new LinkMoveLeftCmd(this), Keys.Left);
 
-            keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.Z);
-            keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.N);
-
-            keyboard.RegisterCommand(new GameEndCmd(this), Keys.Q);
-            keyboard.RegisterCommand(new GameRestartCmd(this), Keys.R);
-
             /* Requirement - The 'z' and 'n' key should cause Link to attack using his sword. 
              * Number keys(1, 2, 3, etc.) should be used to have Link use a different item(later 
              *  this will be replaced with a menu system and 'x' and 'm' for the secondary item. 
              * Use 'e' to cause Link to become damaged
             */
+            keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.Z);
+            keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.N);
+
+            /* Requirement - Use 'q' to quit 
+             * and 'r' to reset the program back to its initial state.
+             */
+            keyboard.RegisterCommand(new GameEndCmd(this), Keys.Q);
+            keyboard.RegisterCommand(new GameRestartCmd(this), Keys.R);
+
+            
 
             /* Requirement - Use keys "t" and "y" to cycle between which block is currently being 
              * shown (i.e. think of the obstacles as being in a list where the game's current 
@@ -73,9 +77,7 @@ namespace Project1
              * interact with any other objects
              */
 
-            /* Requirement - Use 'q' to quit 
-             * and 'r' to reset the program back to its initial state.
-             */
+            
 
             // Load sprite images 
         }
