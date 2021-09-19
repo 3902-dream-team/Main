@@ -8,7 +8,6 @@ namespace Project1.LinkComponents
     {
         ILink Link { get; set; }
         void Update();
-        void Draw();
         void MoveUp();
         void MoveDown();
         void MoveRight();

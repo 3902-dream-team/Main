@@ -59,12 +59,12 @@ namespace Project1.LinkComponents
         }
         public void Draw()
         {
-            LinkState.Draw(); 
+            
         }
 
         public void Update()
         {
-            LinkState.Draw();        
+                  
         }
     }
 }

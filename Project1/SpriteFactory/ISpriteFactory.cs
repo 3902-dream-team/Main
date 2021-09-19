@@ -6,9 +6,8 @@ using System.Text;
 namespace Project1.SpriteFactory
 {
     interface ISpriteFactory
-    {
-        private static readonly ISpriteFactory instance;
-        ISpriteFactory Instance { get; }
+    { 
+        public static ISpriteFactory Instance { get; }
         void LoadAllTextures(ContentManager content);
     }
 }

@@ -46,6 +46,9 @@ namespace Project1
             keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.Z);
             keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.N);
 
+            keyboard.RegisterCommand(new GameEndCmd(this), Keys.Q);
+            keyboard.RegisterCommand(new GameRestartCmd(this), Keys.R);
+
             /* Requirement - The 'z' and 'n' key should cause Link to attack using his sword. 
              * Number keys(1, 2, 3, etc.) should be used to have Link use a different item(later 
              *  this will be replaced with a menu system and 'x' and 'm' for the secondary item. 
@@ -82,7 +85,7 @@ namespace Project1
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+            keyboard.Update();
             Link.Update(); 
             base.Update(gameTime);
         }
@@ -94,6 +97,11 @@ namespace Project1
             // TODO: Add your drawing code here
             Link.Draw(); 
             base.Draw(gameTime);
+        }
+
+        public void Restart()
+        {
+
         }
     }
 }

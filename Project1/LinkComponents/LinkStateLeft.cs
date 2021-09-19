@@ -17,12 +17,6 @@ namespace Project1.LinkComponents
         {
 
         }
-
-        public void Draw()
-        {
-
-        }
-
         public void MoveDown()
         {
             Link.LinkState = new LinkStateDown(Link);

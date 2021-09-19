@@ -15,7 +15,7 @@ namespace Project1.Controller
 
         public void RegisterCommand(ICommand command, Keys key)
         {
-            // ?? remove condition - returns false if it fails to add - should nto force it to add 
+            // if add fails then the key is updated with a new command
             if (!controllerMappings.TryAdd(key, command))
             {
                 controllerMappings[key] = command;

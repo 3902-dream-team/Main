@@ -20,7 +20,7 @@ namespace Project1.Command
 
         public void Execute()
         {
-            // implement 
+            game.Exit();
         }
     }
 
@@ -39,7 +39,7 @@ namespace Project1.Command
 
         public void Execute()
         {
-            // implement 
+            game.Restart();
         }
     }
 }
