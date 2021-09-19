@@ -7,7 +7,7 @@ using Project1.SpriteFactory;
 
 namespace Project1.LinkComponents
 {
-    class Link : ILink
+    class LinkWhiteSword : ILink
     {
         public ILinkState LinkState { get; set; }
         // public ILinkItemState LinkItemState { get; set; }
@@ -15,7 +15,7 @@ namespace Project1.LinkComponents
         private Vector2 position;
         private Game1 game;
 
-        public Link(Game1 game)
+        public LinkWhiteSword(Game1 game)
         {
             LinkState = new LinkStateUp(this);
             this.game = game;

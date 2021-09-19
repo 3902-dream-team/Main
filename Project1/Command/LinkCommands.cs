@@ -97,7 +97,7 @@ namespace Project1.Command
         }
         public void Execute()
         {
-            game.Link.SwordAttack();
+            game.Link.Attack();
         }
     }
 }
