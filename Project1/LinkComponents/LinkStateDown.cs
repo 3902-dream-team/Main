@@ -8,15 +8,20 @@ namespace Project1.LinkComponents
     class LinkStateDown : ILinkState
     {
         public ILink Link { get; set; }
+        public Game1 Game { get; set; }
 
-        public LinkStateDown(ILink link)
+        public LinkStateDown(ILink link, Game1 game)
         {
             Link = link;
+            Game = game; 
         }
 
         public void Update()
         {
 
+        }
+        public void Draw()
+        {
         }
         public void MoveDown()
         {
@@ -25,17 +30,17 @@ namespace Project1.LinkComponents
 
         public void MoveLeft()
         {
-            Link.LinkState = new LinkStateLeft(Link);
+            Link.LinkState = new LinkStateLeft(Link, Game);
         }
 
         public void MoveRight()
         {
-            Link.LinkState = new LinkStateRight(Link);
+            Link.LinkState = new LinkStateRight(Link, Game);
         }
 
         public void MoveUp()
         {
-            Link.LinkState = new LinkStateUp(Link);
+            Link.LinkState = new LinkStateUp(Link, Game);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Project1.LinkComponents
 
         public Link(Game1 game)
         {
-            LinkState = new LinkStateUp(this);
+            LinkState = new LinkStateUp(this, game);
             this.game = game;
         }
         public void MoveDown()
@@ -67,7 +67,7 @@ namespace Project1.LinkComponents
         }
         public void Draw()
         {
-            
+            LinkState.Draw();
         }
 
         public void Update()
