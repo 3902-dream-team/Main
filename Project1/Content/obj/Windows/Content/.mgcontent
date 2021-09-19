@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Sprites/Block.png</File>
     <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Sprites/Bosses.png</File>
     <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Sprites/Dungeon Enemies.png</File>
     <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Sprites/Items &amp; Weapons.png</File>
@@ -14,6 +15,7 @@
     <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Sprites/Title Screen &amp; Story All Treasures.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

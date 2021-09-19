@@ -208,3 +208,4 @@ C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\obj\Debug\netc
 C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\obj\Debug\netcoreapp3.1\Project1.dll
 C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\obj\Debug\netcoreapp3.1\Project1.pdb
 C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\obj\Debug\netcoreapp3.1\Project1.genruntimeconfig.cache
+C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\Block.xnb
