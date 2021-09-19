@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/Elise/Source/Repos/3902-dream-team/main-project/Project1/Content/Sprites/Title Screen &amp; Story All Treasures.png</SourceFile>
-  <SourceTime>2021-09-19T14:16:02.9109395-04:00</SourceTime>
-  <DestFile>C:/Users/Elise/Source/Repos/3902-dream-team/main-project/Project1/Content/bin/Windows/Content/Sprites/Title Screen &amp; Story All Treasures.xnb</DestFile>
-  <DestTime>2021-09-19T15:30:42.2954359-04:00</DestTime>
+  <SourceFile>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Sprites/Title Screen &amp; Story All Treasures.png</SourceFile>
+  <SourceTime>2021-09-19T16:13:39.2865979-04:00</SourceTime>
+  <DestFile>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/bin/Windows/Content/Sprites/Title Screen &amp; Story All Treasures.xnb</DestFile>
+  <DestTime>2021-09-19T16:16:11.7100245-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T12:17:54-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
