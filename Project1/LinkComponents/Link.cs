@@ -23,8 +23,8 @@ namespace Project1.LinkComponents
 
         public Link(Game1 game)
         {
-            LinkDirectionState = new LinkStateUp(this, game);
-            LinkItemState = new LinkStateNoItem(this); 
+            LinkDirectionState = new LinkStateUp(this);     // default state is up 
+            LinkItemState = new LinkStateNoItem(this);      // default state is no item
             this.game = game;
             Texture = LinkSpriteFactory.Instance.DirectionSpriteSheet(this);
             start = 4;
