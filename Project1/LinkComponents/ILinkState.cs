@@ -8,9 +8,6 @@ namespace Project1.LinkComponents
     {
         ILink Link { get; set; }
         Game1 Game { get; set; }
-        void Update();
-
-        void Draw(); 
         void MoveUp();
         void MoveDown();
         void MoveRight();

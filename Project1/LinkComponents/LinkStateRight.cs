@@ -15,14 +15,6 @@ namespace Project1.LinkComponents
             Link = link;
             Game = game; 
         }
-
-        public void Update()
-        {
-
-        }
-        public void Draw()
-        {
-        }
         public void MoveDown()
         {
             Link.LinkState = new LinkStateDown(Link, Game); 

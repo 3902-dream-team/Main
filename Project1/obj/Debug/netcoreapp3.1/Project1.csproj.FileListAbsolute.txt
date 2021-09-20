@@ -210,3 +210,10 @@ C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\obj\Debug\netc
 C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\obj\Debug\netcoreapp3.1\Project1.genruntimeconfig.cache
 C:\Users\chaew\source\repos\3902-dream-team\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\Block.xnb
 C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\Block.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\LinkSprites\BasicMovement.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\LinkSprites\MagicalShield.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\LinkSprites\PickUpItem.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\LinkSprites\UseItemOrWeapon.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\LinkSprites\WoodenSword.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\BasicMovement.xnb
+C:\Users\samch\source\repos\main-project\Project1\bin\Debug\netcoreapp3.1\Content\Sprites\BasicMovement.xnb
