@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Project1.SpriteFactory;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,12 +14,14 @@ namespace Project1.LinkComponents
         public LinkStateDown(ILink link, Game1 game)
         {
             Link = link;
-            Game = game; 
+            Game = game;
+            Update();
         }
 
         public void Update()
         {
-
+            Link.Texture = LinkSpriteFactory.Instance.DirectionSpriteSheet(Link);
+            Link.start = 0;
         }
         public void MoveDown()
         {

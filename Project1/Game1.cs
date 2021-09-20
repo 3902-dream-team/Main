@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using Project1.Command;
 using Project1.Controller;
 using Project1.LinkComponents;
+using Project1.SpriteFactory;
 
 namespace Project1
 {
@@ -24,14 +25,15 @@ namespace Project1
         protected override void Initialize()
         {
             keyboard = new KeyboardController();
-            Link = new Link(this);
-            Block = new BlockComponents.Block(new Vector2(200, 200)); // it needs to be changed - for compile
+            Link = new Link(this); 
             base.Initialize();
         }
 
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
+            LinkSpriteFactory.Instance.LoadAllTextures(Content);
+            Link = new Link(this);
 
             // Register keyboard commands 
             // Requirement - Arrow and "wasd" keys should move Link and change his facing direction.
@@ -117,9 +119,9 @@ namespace Project1
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
-            Link.Draw();
-            Block.Draw(_spriteBatch);
+            _spriteBatch.Begin();
+            Link.Draw(_spriteBatch);
+            _spriteBatch.End();
             base.Draw(gameTime);
         }
 

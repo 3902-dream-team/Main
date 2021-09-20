@@ -28,10 +28,8 @@ namespace Project1.Controller
 
             foreach (Keys key in pressedKeys)
             {
-                if (controllerMappings.ContainsKey(key))
-                {
-                    controllerMappings[key].Execute();
-                }
+                controllerMappings[key].Execute();
+                break;
             }
         }
 

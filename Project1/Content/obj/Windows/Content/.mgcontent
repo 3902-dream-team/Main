@@ -9,12 +9,22 @@
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Dungeon Enemies.png</File>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Items &amp; Weapons.png</File>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Link.png</File>
+    <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/LinkSprites/BasicMovement.png</File>
+    <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/LinkSprites/MagicalShield.png</File>
+    <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/LinkSprites/PickUpItem.png</File>
+    <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/LinkSprites/UseItemOrWeapon.png</File>
+    <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/LinkSprites/WoodenSword.png</File>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/MirrorredLink.png</File>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/NPCs.png</File>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Overworld Enemies.png</File>
     <File>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Title Screen &amp; Story All Treasures.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

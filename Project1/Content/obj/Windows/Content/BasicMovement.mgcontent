@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/samch/source/repos/main-project/Project1/Content/Sprites/Overworld Enemies.png</SourceFile>
-  <SourceTime>2021-09-19T10:58:47.3514866-04:00</SourceTime>
-  <DestFile>C:/Users/samch/source/repos/main-project/Project1/Content/bin/Windows/Content/Sprites/Overworld Enemies.xnb</DestFile>
-  <DestTime>2021-09-20T13:30:46.2440288-04:00</DestTime>
+  <SourceFile>C:/Users/samch/source/repos/main-project/Project1/Content/BasicMovement.png</SourceFile>
+  <SourceTime>2021-09-19T17:08:22.6518698-04:00</SourceTime>
+  <DestFile>C:/Users/samch/source/repos/main-project/Project1/Content/bin/Windows/Content/BasicMovement.xnb</DestFile>
+  <DestTime>2021-09-19T20:22:40.2928494-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T12:17:54-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
