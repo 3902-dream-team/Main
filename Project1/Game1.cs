@@ -51,6 +51,25 @@ namespace Project1
             keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.Z);
             keyboard.RegisterCommand(new LinkSwordAttackCmd(this), Keys.N);
 
+            keyboard.RegisterCommand(new LinkUseNoItemCmd(this), Keys.NumPad0);
+            keyboard.RegisterCommand(new LinkUseNoItemCmd(this), Keys.D0);
+
+            keyboard.RegisterCommand(new LinkUseWoodenSwordCmd(this), Keys.NumPad1);
+            keyboard.RegisterCommand(new LinkUseWoodenSwordCmd(this), Keys.D1);
+
+            keyboard.RegisterCommand(new LinkUseMagicalRodCmd(this), Keys.NumPad2);
+            keyboard.RegisterCommand(new LinkUseMagicalRodCmd(this), Keys.D2);
+
+            keyboard.RegisterCommand(new LinkUseMagicalSheildCmd(this), Keys.NumPad3);
+            keyboard.RegisterCommand(new LinkUseMagicalSheildCmd(this), Keys.D3);
+
+            keyboard.RegisterCommand(new LinkUseMagicalSwordCmd(this), Keys.NumPad4);
+            keyboard.RegisterCommand(new LinkUseMagicalSwordCmd(this), Keys.D4);
+
+            keyboard.RegisterCommand(new LinkUseWhiteSwordCmd(this), Keys.NumPad5);
+            keyboard.RegisterCommand(new LinkUseWhiteSwordCmd(this), Keys.D5);
+
+
             /* Requirement - Use 'q' to quit 
              * and 'r' to reset the program back to its initial state.
              */

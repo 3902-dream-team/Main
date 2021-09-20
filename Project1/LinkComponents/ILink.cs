@@ -17,7 +17,13 @@ namespace Project1.LinkComponents
         void MoveRight();
         void MoveLeft();
         void Attack();
-        void TakeDamage(); 
+        void TakeDamage();
+        void UseNoItem();
+        void UseMagicalRod();
+        void UseMagicalSheild();
+        void UseMagicalSword();
+        void UseWhiteSword();
+        void UseWoodenSword();
         void Draw();
         void Update();
     }

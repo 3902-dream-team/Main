@@ -15,7 +15,7 @@ namespace Project1.Controller
 
         public void RegisterCommand(ICommand command, Keys key)
         {
-            // if add fails then the key is updated with a new command
+            // ?? add fails for a reason - should not force it 
             if (!controllerMappings.TryAdd(key, command))
             {
                 controllerMappings[key] = command;
@@ -28,7 +28,10 @@ namespace Project1.Controller
 
             foreach (Keys key in pressedKeys)
             {
-                controllerMappings[key].Execute();
+                if (controllerMappings.ContainsKey(key))
+                {
+                    controllerMappings[key].Execute();
+                }
             }
         }
 

@@ -65,6 +65,32 @@ namespace Project1.LinkComponents
         {
 
         }
+
+        public void UseNoItem()
+        {
+
+        }
+        public void UseMagicalRod()
+        {
+
+        }
+        public void UseMagicalSheild()
+        {
+
+        }
+        public void UseMagicalSword()
+        {
+
+        }
+        public void UseWhiteSword()
+        {
+
+        }
+        public void UseWoodenSword()
+        {
+
+        }
+
         public void Draw()
         {
             LinkState.Draw();
