@@ -11,24 +11,28 @@ namespace Project1.LinkComponents
     {
         public ILinkState LinkState { get; set; }
         public ILinkItemState LinkItemState { get; set; }
-        public Texture2D Texture;
+        public Texture2D Texture { get; set; }
         public int Columns { get; set; }
         public int TotalFrames { get; set; }
         public int Rows { get; set; }
         private int currentFrame;
         private Vector2 position;
         private Game1 game;
+        public int start { get; set; }
+        private int speed=2;
 
         public Link(Game1 game)
         {
             LinkState = new LinkStateUp(this, game);
             this.game = game;
-            Texture = LinkSpriteFactory.Instance.GetDirectionSpriteSheet(this);
+            Texture = LinkSpriteFactory.Instance.DirectionSpriteSheet(this);
+            start = 4;
+            currentFrame = 0;
         }
         public void MoveDown()
         {
             if ((int)position.Y < game.GraphicsDevice.Viewport.Height)
-                position.Y++;
+                position.Y+=speed;
             
             LinkState.MoveDown();
         }
@@ -36,7 +40,7 @@ namespace Project1.LinkComponents
         public void MoveLeft()
         {
             if ((int)position.X > 0)
-                position.X--;
+                position.X-=speed;
             
             LinkState.MoveLeft();
         }
@@ -44,7 +48,7 @@ namespace Project1.LinkComponents
         public void MoveRight()
         {
             if ((int)position.X < game.GraphicsDevice.Viewport.Width)
-                position.X++;
+                position.X+=speed;
             
             LinkState.MoveRight();
         }
@@ -52,7 +56,7 @@ namespace Project1.LinkComponents
         public void MoveUp()
         {
             if ((int)position.Y > 0)
-                position.Y--;
+                position.Y-=speed;
             
             LinkState.MoveUp();
         }
@@ -69,9 +73,10 @@ namespace Project1.LinkComponents
         public void Draw(SpriteBatch spriteBatch)
         {
             int width = Texture.Width / Columns;
-            int height = Texture.Height;
-            int column = currentFrame % Columns;
-            Rectangle sourceRectangle = new Rectangle(width*column, height, width, height);
+            int height = Texture.Height/Rows;
+            //int column = start % Columns;
+            int row = currentFrame / Columns;
+            Rectangle sourceRectangle = new Rectangle(start*width, height*row, width, height);
             Rectangle destinationRectangle = new Rectangle((int)position.X, (int)position.Y, 50, 50);
             spriteBatch.Draw(Texture, destinationRectangle, sourceRectangle, Color.White);
         }
@@ -79,8 +84,14 @@ namespace Project1.LinkComponents
         public void Update()
         {
             currentFrame++;
+            start++;
             if (currentFrame == TotalFrames)
+            {
                 currentFrame = 0;
+                start -= TotalFrames;
+               
+            }
+                
         }
     }
 }

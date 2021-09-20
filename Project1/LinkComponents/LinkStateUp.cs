@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
+using Project1.SpriteFactory;
 
 namespace Project1.LinkComponents
 {
@@ -13,7 +14,13 @@ namespace Project1.LinkComponents
         public LinkStateUp(ILink link, Game1 game)
         {
             Link = link;
-            Game = game; 
+            Game = game;
+            Update();
+        }
+        public void Update()
+        {
+            Link.Texture = LinkSpriteFactory.Instance.DirectionSpriteSheet(Link);
+            Link.start = 4;
         }
 
         public void MoveDown()

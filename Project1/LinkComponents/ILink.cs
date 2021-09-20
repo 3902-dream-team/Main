@@ -14,6 +14,9 @@ namespace Project1.LinkComponents
         int Columns { get; set; }
         int Rows { get; set; }
         int TotalFrames { get; set; }
+        Texture2D Texture { get; set; }
+        int start { get; set; }
+
         void MoveUp();
         void MoveDown();
         void MoveRight();

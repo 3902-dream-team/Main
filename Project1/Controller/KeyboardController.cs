@@ -29,6 +29,7 @@ namespace Project1.Controller
             foreach (Keys key in pressedKeys)
             {
                 controllerMappings[key].Execute();
+                break;
             }
         }
 

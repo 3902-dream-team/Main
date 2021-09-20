@@ -27,12 +27,14 @@ namespace Project1.SpriteFactory
             directions = content.Load<Texture2D>("Sprites/LinkSprites/BasicMovement");
         }
 
-        public Texture2D GetDirectionSpriteSheet(ILink Link)
+        public Texture2D DirectionSpriteSheet(ILink Link)
         {
-            Link.Columns = 6;
+            Link.Columns = 8;
             Link.Rows = 1;
-            Link.TotalFrames = 6;
+            Link.TotalFrames = 2;
             return directions;
         }
+
+
     }
 }
