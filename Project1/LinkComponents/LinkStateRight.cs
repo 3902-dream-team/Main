@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 
 namespace Project1.LinkComponents
 {
-    class LinkStateRight : ILinkState
+    class LinkStateRight : ILinkDirectionState
     {
         public ILink Link { get; set; }
         public Game1 Game { get; set; }
@@ -20,17 +20,14 @@ namespace Project1.LinkComponents
         {
 
         }
-        public void Draw()
-        {
-        }
         public void MoveDown()
         {
-            Link.LinkState = new LinkStateDown(Link, Game); 
+            Link.LinkDirectionState = new LinkStateDown(Link, Game); 
         }
 
         public void MoveLeft()
         {
-            Link.LinkState = new LinkStateLeft(Link, Game); 
+            Link.LinkDirectionState = new LinkStateLeft(Link, Game); 
         }
 
         public void MoveRight()
@@ -39,7 +36,7 @@ namespace Project1.LinkComponents
 
         public void MoveUp()
         {
-            Link.LinkState = new LinkStateUp(Link, Game); 
+            Link.LinkDirectionState = new LinkStateUp(Link, Game); 
         }
     }
 }

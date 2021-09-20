@@ -6,5 +6,14 @@ namespace Project1.LinkComponents
 {
     public interface ILinkItemState
     {
+        ILink Link { get; set; }
+        void Attack();
+        void TakeDamage();
+        void UseNoItem();
+        void UseMagicalRod();
+        void UseMagicalSheild();
+        void UseMagicalSword();
+        void UseWhiteSword();
+        void UseWoodenSword();
     }
 }

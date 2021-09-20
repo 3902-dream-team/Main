@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Project1.LinkComponents
 {
-    class LinkStateDown : ILinkState
+    class LinkStateDown : ILinkDirectionState
     {
         public ILink Link { get; set; }
         public Game1 Game { get; set; }
@@ -20,9 +20,6 @@ namespace Project1.LinkComponents
         {
 
         }
-        public void Draw()
-        {
-        }
         public void MoveDown()
         {
             
@@ -30,17 +27,17 @@ namespace Project1.LinkComponents
 
         public void MoveLeft()
         {
-            Link.LinkState = new LinkStateLeft(Link, Game);
+            Link.LinkDirectionState = new LinkStateLeft(Link, Game);
         }
 
         public void MoveRight()
         {
-            Link.LinkState = new LinkStateRight(Link, Game);
+            Link.LinkDirectionState = new LinkStateRight(Link, Game);
         }
 
         public void MoveUp()
         {
-            Link.LinkState = new LinkStateUp(Link, Game);
+            Link.LinkDirectionState = new LinkStateUp(Link, Game);
         }
     }
 }

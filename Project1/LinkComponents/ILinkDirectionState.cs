@@ -4,13 +4,10 @@ using System.Text;
 
 namespace Project1.LinkComponents
 {
-    public interface ILinkState
+    public interface ILinkDirectionState
     {
         ILink Link { get; set; }
-        Game1 Game { get; set; }
         void Update();
-
-        void Draw(); 
         void MoveUp();
         void MoveDown();
         void MoveRight();

@@ -9,7 +9,9 @@ namespace Project1.LinkComponents
 {
     public interface ILink
     {
-        ILinkState LinkState { get; set; }
+        ILinkDirectionState LinkDirectionState { get; set; }
+        ILinkItemState LinkItemState { get; set; }
+
         ISpriteFactory LinkSprite { get; set; }
         // ILinkItemState LinkItemState { get; set; }
         void MoveUp();

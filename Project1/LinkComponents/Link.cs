@@ -9,15 +9,16 @@ namespace Project1.LinkComponents
 {
     class Link : ILink
     {
-        public ILinkState LinkState { get; set; }
-        // public ILinkItemState LinkItemState { get; set; }
+        public ILinkDirectionState LinkDirectionState { get; set; }
+        public ILinkItemState LinkItemState { get; set; }
         public ISpriteFactory LinkSprite { get; set; }
         private Vector2 position;
         private Game1 game;
 
         public Link(Game1 game)
         {
-            LinkState = new LinkStateUp(this, game);
+            LinkDirectionState = new LinkStateUp(this, game);
+            LinkItemState = new LinkStateNoItem(this); 
             this.game = game;
         }
         public void MoveDown()
@@ -26,7 +27,7 @@ namespace Project1.LinkComponents
             {
                 position.Y++;
             }
-            LinkState.MoveDown();
+            LinkDirectionState.MoveDown();
         }
 
         public void MoveLeft()
@@ -35,7 +36,7 @@ namespace Project1.LinkComponents
             {
                 position.X--;
             }
-            LinkState.MoveLeft();
+            LinkDirectionState.MoveLeft();
         }
 
         public void MoveRight()
@@ -44,7 +45,7 @@ namespace Project1.LinkComponents
             {
                 position.X++;
             }
-            LinkState.MoveRight();
+            LinkDirectionState.MoveRight();
         }
 
         public void MoveUp()
@@ -53,7 +54,7 @@ namespace Project1.LinkComponents
             {
                 position.Y--;
             }
-            LinkState.MoveUp();
+            LinkDirectionState.MoveUp();
         }
 
         public void Attack()
@@ -68,32 +69,32 @@ namespace Project1.LinkComponents
 
         public void UseNoItem()
         {
-
+            LinkItemState.UseNoItem();
         }
         public void UseMagicalRod()
         {
-            game.Link = new LinkMagicalRod(game);
+            LinkItemState.UseMagicalRod(); 
         }
         public void UseMagicalSheild()
         {
-            game.Link = new LinkMagicalSheild(game);
+            LinkItemState.UseMagicalSheild();
         }
         public void UseMagicalSword()
         {
-            game.Link = new LinkMagicalSword(game);
+            LinkItemState.UseMagicalSword();
         }
         public void UseWhiteSword()
         {
-            game.Link = new LinkWhiteSword(game);
+            LinkItemState.UseWhiteSword();
         }
         public void UseWoodenSword()
         {
-            game.Link = new LinkWoodenSword(game); 
+            LinkItemState.UseWoodenSword();
         }
 
         public void Draw()
         {
-            LinkState.Draw();
+            // LinkState.Draw();
         }
 
         public void Update()
