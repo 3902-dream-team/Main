@@ -12,6 +12,7 @@ namespace Project1
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         public ILink Link;
+        public BlockComponents.IBlock Block;
         private IController keyboard;
         public Game1()
         {
@@ -116,7 +117,8 @@ namespace Project1
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            Link.Draw(); 
+            Link.Draw();
+            Block.Draw(_spriteBatch);
             base.Draw(gameTime);
         }
 
