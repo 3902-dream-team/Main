@@ -24,7 +24,8 @@ namespace Project1
         protected override void Initialize()
         {
             keyboard = new KeyboardController();
-            Link = new Link(this); 
+            Link = new Link(this);
+            Block = new BlockComponents.Block(new Vector2(200, 200)); // it needs to be changed - for compile
             base.Initialize();
         }
 
