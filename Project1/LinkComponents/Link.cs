@@ -9,7 +9,7 @@ namespace Project1.LinkComponents
 {
     class Link : ILink
     {
-        public ILinkState LinkState { get; set; }
+        public ILinkDirectionState LinkDirectionState { get; set; }
         public ILinkItemState LinkItemState { get; set; }
         public Texture2D Texture { get; set; }
         public int Columns { get; set; }
@@ -35,7 +35,7 @@ namespace Project1.LinkComponents
             if ((int)position.Y < game.GraphicsDevice.Viewport.Height)
                 position.Y+=speed;
             
-            LinkState.MoveDown();
+            LinkDirectionState.MoveDown();
         }
 
         public void MoveLeft()
@@ -43,7 +43,7 @@ namespace Project1.LinkComponents
             if ((int)position.X > 0)
                 position.X-=speed;
             
-            LinkState.MoveLeft();
+            LinkDirectionState.MoveLeft();
         }
 
         public void MoveRight()
@@ -51,7 +51,7 @@ namespace Project1.LinkComponents
             if ((int)position.X < game.GraphicsDevice.Viewport.Width)
                 position.X+=speed;
             
-            LinkState.MoveRight();
+            LinkDirectionState.MoveRight();
         }
 
         public void MoveUp()
@@ -59,7 +59,7 @@ namespace Project1.LinkComponents
             if ((int)position.Y > 0)
                 position.Y-=speed;
             
-            LinkState.MoveUp();
+            LinkDirectionState.MoveUp();
         }
 
         public void Attack()
@@ -97,7 +97,7 @@ namespace Project1.LinkComponents
             LinkItemState.UseWoodenSword();
         }
 
-        public void Draw()
+        public void Draw(SpriteBatch spriteBatch)
         {
             int width = Texture.Width / Columns;
             int height = Texture.Height/Rows;

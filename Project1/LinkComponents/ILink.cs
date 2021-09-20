@@ -9,7 +9,7 @@ namespace Project1.LinkComponents
 {
     public interface ILink
     {
-        ILinkState LinkState { get; set; }
+        ILinkDirectionState LinkDirectionState { get; set; }
         ILinkItemState LinkItemState { get; set; }
         int Columns { get; set; }
         int Rows { get; set; }
@@ -29,7 +29,7 @@ namespace Project1.LinkComponents
         void UseMagicalSword();
         void UseWhiteSword();
         void UseWoodenSword();
-        void Draw();
+        void Draw(SpriteBatch spriteBatch);
         void Update();
     }
 }
