@@ -13,7 +13,7 @@ namespace Project1.LinkComponents
         public LinkStateRight(ILink link)
         {
             Link = link;
-            Game = game;
+            
             Update();
         }
         public void Update()
