@@ -68,27 +68,29 @@ namespace Project1.LinkComponents
 
         public void UseNoItem()
         {
+            game.Link = new Link(game);
 
         }
         public void UseMagicalRod()
         {
-
         }
         public void UseMagicalSheild()
         {
+            game.Link = new LinkMagicalSheild(game);
 
         }
         public void UseMagicalSword()
         {
+            game.Link = new LinkMagicalSword(game);
 
         }
         public void UseWhiteSword()
         {
-
+            game.Link = new LinkWhiteSword(game);
         }
         public void UseWoodenSword()
         {
-
+            game.Link = new LinkWoodenSword(game);
         }
 
         public void Draw()
