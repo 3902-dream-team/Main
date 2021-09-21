@@ -10,14 +10,15 @@ namespace Project1.LinkComponents
     class LinkStateWoodenSword : ILinkItemState
     {
         public ILink Link { get; set; }
-
+        public Boolean IsAttaking { get; set; }
         public LinkStateWoodenSword(ILink link)
         {
-            Link = link; 
+            Link = link;
+            IsAttaking = false; 
         }
         public void Attack()
         {
-            throw new NotImplementedException();
+            IsAttaking = true;
         }
 
         public void TakeDamage()

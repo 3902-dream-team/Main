@@ -10,15 +10,15 @@ namespace Project1.LinkComponents
     class LinkStateMagicalRod : ILinkItemState
     {
         public ILink Link { get; set; }
-
+        public Boolean IsAttaking { get; set; }
         public LinkStateMagicalRod(ILink link)
         {
-            Link = link; 
+            Link = link;
+            IsAttaking = false; 
         }
 
         public void Attack()
         {
-            throw new NotImplementedException();
         }
 
         public void TakeDamage()

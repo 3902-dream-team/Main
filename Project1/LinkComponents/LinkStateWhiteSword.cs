@@ -10,15 +10,16 @@ namespace Project1.LinkComponents
     class LinkStateWhiteSword : ILinkItemState
     {
         public ILink Link { get; set; }
-        
+        public Boolean IsAttaking { get; set; }
         public LinkStateWhiteSword(ILink link)
         {
-            Link = link; 
+            Link = link;
+            IsAttaking = false;
         }
 
         public void Attack()
         {
-            throw new NotImplementedException();
+            IsAttaking = true;
         }
 
         public void TakeDamage()

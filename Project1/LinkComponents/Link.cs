@@ -19,7 +19,7 @@ namespace Project1.LinkComponents
         private Vector2 position;
         private Game1 game;
         public int start { get; set; }
-        private int speed=2;
+        private int Step = 2;
 
         public Link(Game1 game)
         {
@@ -33,7 +33,7 @@ namespace Project1.LinkComponents
         public void MoveDown()
         {
             if ((int)position.Y < game.GraphicsDevice.Viewport.Height)
-                position.Y+=speed;
+                position.Y+= Step;
             
             LinkDirectionState.MoveDown();
         }
@@ -41,7 +41,7 @@ namespace Project1.LinkComponents
         public void MoveLeft()
         {
             if ((int)position.X > 0)
-                position.X-=speed;
+                position.X-= Step;
             
             LinkDirectionState.MoveLeft();
         }
@@ -49,7 +49,7 @@ namespace Project1.LinkComponents
         public void MoveRight()
         {
             if ((int)position.X < game.GraphicsDevice.Viewport.Width)
-                position.X+=speed;
+                position.X+= Step;
             
             LinkDirectionState.MoveRight();
         }
@@ -57,14 +57,14 @@ namespace Project1.LinkComponents
         public void MoveUp()
         {
             if ((int)position.Y > 0)
-                position.Y-=speed;
+                position.Y-= Step;
             
             LinkDirectionState.MoveUp();
         }
 
         public void Attack()
         {
-            throw new NotImplementedException();
+            LinkItemState.Attack(); 
         }
 
         public void TakeDamage()

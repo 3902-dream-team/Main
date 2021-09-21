@@ -10,10 +10,11 @@ namespace Project1.LinkComponents
     class LinkStateDamage : ILinkItemState
     {
         public ILink Link { get; set; }
-
+        public Boolean IsAttaking { get; set; }
         public LinkStateDamage(ILink link)
         {
-            Link = link; 
+            Link = link;
+            IsAttaking = false;
         }
 
         public void Attack()
