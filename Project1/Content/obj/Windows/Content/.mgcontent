@@ -4,12 +4,44 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/samch/source/repos/3902/main-project/Project1/Content/Sprites/LinkSprites/BasicMovement.png</File>
-    <File>C:/Users/samch/source/repos/3902/main-project/Project1/Content/Sprites/LinkSprites/MagicalShield.png</File>
-    <File>C:/Users/samch/source/repos/3902/main-project/Project1/Content/Sprites/LinkSprites/PickUpItem.png</File>
-    <File>C:/Users/samch/source/repos/3902/main-project/Project1/Content/Sprites/LinkSprites/WoodenSword.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/Blocks.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/BasicMovement.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/Items.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/MagicalRod.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/MagicalShield.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/MagicalSword.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/PickUpItem.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/UseItem.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/WhiteSword.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/LinkSprites/WoodenSword.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Armos.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Ghini.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Leever.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Lynel.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/MoblinAndMolblin.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Octorok.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Peahat.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Rock.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Tektite.png</File>
+    <File>C:/Users/chaew/source/repos/3902-dream-team/main-project/Project1/Content/OverworldEnemies/Zora.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
